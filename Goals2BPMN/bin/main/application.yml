@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+mapekloop:
+  messagebroker:
+    type: rabbitmq
+    host: 172.23.180.72
+    port: 5672
+    user: microservice
+    password: microservice
+ 

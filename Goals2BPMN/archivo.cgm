@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cgmtool:CGMDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cgmtool="http://sts-tool.eu/ststool/model/2.0.0" name="archivo">
+  <graphicalConstraint viewID="eu.aniketos.wp1.ststool.view.social"/>
+  <elements xsi:type="cgmtool:Goal" id="g2a05a4ba-1b3b-4380-9ab9-631f74afb28f" name="Client Manager" outcomingRefinement="//@elements.3">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="268,200,100,50">
+      <properties name="compartment" value="false"/>
+      <properties name="compartment" value="false"/>
+    </graphicalConstraints>
+  </elements>
+  <elements xsi:type="cgmtool:Requriement" id="r8abd332e-e613-4e2c-abc4-91acf919a437" name="Validate Client" incomingRefinement="//@elements.2" incomingContribution="//@elements.10">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="400,309,100,50">
+      <properties name="compartment" value="false"/>
+      <properties name="compartment" value="false"/>
+    </graphicalConstraints>
+  </elements>
+  <elements xsi:type="cgmtool:IncomingRefinement" id="i9c8f991c-38f0-4c64-aa93-b013455775bb" source="//@elements.4" target="//@elements.1">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social"/>
+  </elements>
+  <elements xsi:type="cgmtool:OutcomingRefinement" id="oc8990aa3-79f6-4153-a94e-c8165b40f4ab" source="//@elements.0" target="//@elements.4">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social"/>
+  </elements>
+  <elements xsi:type="cgmtool:RefinementNode" name="R1" incomingRefinement="//@elements.3" outcomingRefinement="//@elements.2">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="373,268,23,23"/>
+  </elements>
+  <elements xsi:type="cgmtool:Goal" id="g033c1450-4b9e-4eb9-a70e-c330b9d721b4" name="Warehouse" outcomingRefinement="//@elements.8">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="856,207,100,50">
+      <properties name="compartment" value="false"/>
+      <properties name="compartment" value="false"/>
+    </graphicalConstraints>
+  </elements>
+  <elements xsi:type="cgmtool:Requriement" id="r765b0936-6705-4613-88e5-4bb562dcabd8" name="Book Products" incomingRefinement="//@elements.7" outgoingContribution="//@elements.10">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="718,306,100,50">
+      <properties name="compartment" value="false"/>
+      <properties name="compartment" value="false"/>
+    </graphicalConstraints>
+  </elements>
+  <elements xsi:type="cgmtool:IncomingRefinement" id="i6cd9d864-40e8-4e57-9127-6693f3dd1f0c" source="//@elements.9" target="//@elements.6">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social"/>
+  </elements>
+  <elements xsi:type="cgmtool:OutcomingRefinement" id="o8da2abdc-7d63-45b9-a1c1-f333118ac766" source="//@elements.5" target="//@elements.9">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social"/>
+  </elements>
+  <elements xsi:type="cgmtool:RefinementNode" name="R2" incomingRefinement="//@elements.8" outcomingRefinement="//@elements.7">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social" bound="826,270,23,23"/>
+  </elements>
+  <elements xsi:type="cgmtool:ElementContribution" id="e444ee028-cb6f-4abe-94d2-0a5e05ae79a2" sourceContribution="//@elements.6" targetContribution="//@elements.1">
+    <graphicalConstraints viewID="eu.aniketos.wp1.ststool.view.social"/>
+  </elements>
+  <optimizationObjectives Priority="1"/>
+  <optimizationObjectives ModelOptimization="MinimizeTheNumberOfUnsatisfiedSoftRequirements" Priority="2"/>
+  <optimizationObjectives ModelOptimization="MinimizeTheNumberOfSatisfiedTasks" Priority="3"/>
+</cgmtool:CGMDiagram>
